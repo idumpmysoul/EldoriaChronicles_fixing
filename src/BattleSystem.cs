@@ -63,7 +63,9 @@ public class BattleSystem
 
                 BattleAnimation();
             }
-
+            if (enemy.Health < 0) enemy.Health = 0;
+            else if (player.Health < 0) player.Health = 0;
+            
             DisplayStatus();
         }
 
