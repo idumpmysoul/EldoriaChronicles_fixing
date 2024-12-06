@@ -9,17 +9,20 @@ public class StartGame
         Random rand = new Random();
         Console.Clear();
         Console.WriteLine("Permainan dimulai...");
-        Character player = new Character("Hero", 100, 10, 1);
+        // Membuat karakter pemain dan meminta input nama
+        Console.WriteLine("Masukkan nama karakter Anda: ");
+        string playerName = Console.ReadLine();
+        Character player = new Character(playerName ?? "Hero", 100, 10, 1); // Menambahkan fallback untuk null
         LevelUpSystem levelUpSystem = new LevelUpSystem();
         Inventory inventory = new Inventory();
 
         while (IsContinue)
         {
-            Console.WriteLine("Hello player {player.Name}");
+            Console.WriteLine($"Hello player {player.Name}");
             Console.WriteLine("You're Currently in Lobby");
             Console.WriteLine("1. Head to the Battle");
             Console.WriteLine("2. Show Character Status");
-            Console.WriteLine("3. Show Inventory");
+            //Console.WriteLine("3. Show Inventory");
             Console.WriteLine("0. End Journey");
             Console.Write("Your choice : ");
             var action = Console.ReadLine();
@@ -65,11 +68,13 @@ public class StartGame
                     }
                     break;
                 case "2":
-                    Console.WriteLine("Selamat Beristirahat Hero!");
+                    player.Display();
                     break;
+                /*
                 case "3":
                     inventory.Display();
                     break;
+                */
                 case "0":
                     Console.WriteLine("Perjalanan yang menyenangkan Hero!");
                     Console.WriteLine("Tekan Enter untuk kembali ke menu utama.");
@@ -80,6 +85,7 @@ public class StartGame
                     Console.WriteLine("Invalid Input!");
                     break;
             }
+            Console.Clear();
         }
     }
 

@@ -31,5 +31,16 @@
                 Console.WriteLine($"{Name} sudah menggunakan potion dalam pertarungan ini!");
             }
         }
+        public void Display()
+        {
+            Console.Clear();
+            Console.WriteLine("Status Karakter:");
+            Console.WriteLine($"Nama: " + Name);
+            Console.WriteLine($"Health: " + Health);
+            Console.WriteLine($"Level: " + Level);
+            Console.WriteLine($"Attack Power: " + AttackPower);
+            Console.WriteLine("Tekan Enter untuk melanjutkan");
+            Console.ReadLine();
+        }
     }
 
