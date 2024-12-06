@@ -4,7 +4,7 @@ namespace EldoriaChronicles
     {
         private Random random = new Random();
 
-        public Goblin(string name, int health, int attackPower) : base(name, health, attackPower)
+        public Goblin() : base("Goblin", 50, 8, 25)
         {
         }
 
@@ -17,7 +17,7 @@ namespace EldoriaChronicles
             }
             else
             {
-                base.SpecialAttack(player);
+                base.Attack(player);
             }
         }
     }
