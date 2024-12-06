@@ -1,16 +1,19 @@
 namespace EldoriaChronicles
 {
-   public class Enemy
+    public class Enemy
     {
         public string Name { get; set; }
         public int Health { get; set; }
         public int AttackPower { get; set; }
 
-        public Enemy(string name, int health, int attackPower)
+        public int ExpValue { get; set; }
+
+        public Enemy(string name, int health, int attackPower, int expValue)
         {
             Name = name;
             Health = health;
             AttackPower = attackPower;
+            ExpValue = expValue;
         }
 
         // Menandai metode SpecialAttack dengan virtual untuk memungkinkan override

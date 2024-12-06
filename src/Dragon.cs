@@ -2,7 +2,7 @@ namespace EldoriaChronicles
 {
     public class Dragon : Enemy
     {
-        public Dragon(string name, int health, int attackPower) : base(name, health, attackPower)
+        public Dragon() : base("Dragon", 200, 25, 100)
         {
         }
 

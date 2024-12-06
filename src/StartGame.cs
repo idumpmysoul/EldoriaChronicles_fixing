@@ -1,27 +1,86 @@
-namespace EldoriaChronicles
+using EldoriaChronicles; // Menambahkan import namespace
+
+public class StartGame
 {
-    public class StartGame
+    public void Execute()
     {
-        public void Execute()
+        bool IsContinue = true;
+        bool IsBattle = true;
+        Random rand = new Random();
+        Console.Clear();
+        Console.WriteLine("Permainan dimulai...");
+        Character player = new Character("Hero", 100, 10, 1);
+        LevelUpSystem levelUpSystem = new LevelUpSystem();
+        Inventory inventory = new Inventory();
+
+        while (IsContinue)
         {
-            Console.Clear();
-            Console.WriteLine("Permainan dimulai...");
-            Character player = new Character("Hero", 100, 10, 1);
-            Enemy enemy = new Enemy("Goblin", 50, 8);
-            LevelUpSystem levelUpSystem = new LevelUpSystem();
-            Inventory inventory = new Inventory();
+            Console.WriteLine("Hello player {player.Name}");
+            Console.WriteLine("You're Currently in Lobby");
+            Console.WriteLine("1. Head to the Battle");
+            Console.WriteLine("2. Show Character Status");
+            Console.WriteLine("3. Show Inventory");
+            Console.WriteLine("0. End Journey");
+            Console.Write("Your choice : ");
+            var action = Console.ReadLine();
 
-            BattleSystem battle = new BattleSystem(player, enemy);
-            battle.StartBattle();
+            switch (action)
+            {
+                case "1":
+                    IsBattle = true;
+                    while (IsBattle)
+                    {
+                        Enemy enemy = rand.Next(3) switch
+                        {
+                            0 => new Goblin(),
+                            1 => new Goblin(),
+                            _ => new Dragon()
+                        };
+                        BattleSystem battle = new BattleSystem(player, enemy);
+                        battle.StartBattle();
 
-            // Menggunakan level up setelah pertarungan
-            levelUpSystem.LevelUp(player, 150); // Misalnya mendapatkan 150 XP dari pertarungan
+                        if (enemy.Health <= 0)
+                        {
+                            levelUpSystem.LevelUp(player, enemy.ExpValue);
+                        }
 
-            // Menggunakan item dari inventory
-            inventory.Display();
+                        Console.WriteLine("Apakah kamu ingin melanjutkan pertarungan?");
+                        Console.WriteLine("1. Lanjut");
+                        Console.WriteLine("2. Kembali ke Lobby");
 
-            Console.WriteLine("Tekan Enter untuk kembali ke menu utama.");
-            Console.ReadLine();
+                        var action2 = Console.ReadLine();
+                        do
+                        {
+                            if (action2 == "1")
+                            {
+                                Console.WriteLine("Menuju medan perang!");
+                            }
+                            else if (action2 == "2")
+                            {
+                                Console.WriteLine("Kembali ke lobby");
+                                IsBattle = false;
+                            }
+                            else Console.WriteLine("Choice Invalid!");
+                        } while (action2 == "1" || action == "2");
+                    }
+                    break;
+                case "2":
+                    Console.WriteLine("Selamat Beristirahat Hero!");
+                    break;
+                case "3":
+                    inventory.Display();
+                    break;
+                case "0":
+                    Console.WriteLine("Perjalanan yang menyenangkan Hero!");
+                    Console.WriteLine("Tekan Enter untuk kembali ke menu utama.");
+                    Console.ReadLine();
+                    IsContinue = false;
+                    break;
+                default:
+                    Console.WriteLine("Invalid Input!");
+                    break;
+            }
         }
     }
+
 }

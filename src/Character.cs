@@ -1,5 +1,4 @@
-namespace EldoriaChronicles
-{
+
     public class Character
     {
         public string Name { get; set; }
@@ -7,7 +6,7 @@ namespace EldoriaChronicles
         public int AttackPower { get; set; }
         public int Level { get; set; }
         public bool IsPotionUsed { get; private set; } // Indicate if potion has been used.
-
+        public int ExperiencePoints { get; set; }
         public Character(string name, int health, int attackPower, int level)
         {
             Name = name;
@@ -33,4 +32,4 @@ namespace EldoriaChronicles
             }
         }
     }
-}
+

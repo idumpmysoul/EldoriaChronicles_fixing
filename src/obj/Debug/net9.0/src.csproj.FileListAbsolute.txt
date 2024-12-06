@@ -1,0 +1,15 @@
+A:\0-COLLEGE\Term3\Object Oriented Programming\AddFeatures\EldoriaChronicles\src\bin\Debug\net9.0\src.exe
+A:\0-COLLEGE\Term3\Object Oriented Programming\AddFeatures\EldoriaChronicles\src\bin\Debug\net9.0\src.deps.json
+A:\0-COLLEGE\Term3\Object Oriented Programming\AddFeatures\EldoriaChronicles\src\bin\Debug\net9.0\src.runtimeconfig.json
+A:\0-COLLEGE\Term3\Object Oriented Programming\AddFeatures\EldoriaChronicles\src\bin\Debug\net9.0\src.dll
+A:\0-COLLEGE\Term3\Object Oriented Programming\AddFeatures\EldoriaChronicles\src\bin\Debug\net9.0\src.pdb
+A:\0-COLLEGE\Term3\Object Oriented Programming\AddFeatures\EldoriaChronicles\src\obj\Debug\net9.0\src.GeneratedMSBuildEditorConfig.editorconfig
+A:\0-COLLEGE\Term3\Object Oriented Programming\AddFeatures\EldoriaChronicles\src\obj\Debug\net9.0\src.AssemblyInfoInputs.cache
+A:\0-COLLEGE\Term3\Object Oriented Programming\AddFeatures\EldoriaChronicles\src\obj\Debug\net9.0\src.AssemblyInfo.cs
+A:\0-COLLEGE\Term3\Object Oriented Programming\AddFeatures\EldoriaChronicles\src\obj\Debug\net9.0\src.csproj.CoreCompileInputs.cache
+A:\0-COLLEGE\Term3\Object Oriented Programming\AddFeatures\EldoriaChronicles\src\obj\Debug\net9.0\src.sourcelink.json
+A:\0-COLLEGE\Term3\Object Oriented Programming\AddFeatures\EldoriaChronicles\src\obj\Debug\net9.0\src.dll
+A:\0-COLLEGE\Term3\Object Oriented Programming\AddFeatures\EldoriaChronicles\src\obj\Debug\net9.0\refint\src.dll
+A:\0-COLLEGE\Term3\Object Oriented Programming\AddFeatures\EldoriaChronicles\src\obj\Debug\net9.0\src.pdb
+A:\0-COLLEGE\Term3\Object Oriented Programming\AddFeatures\EldoriaChronicles\src\obj\Debug\net9.0\src.genruntimeconfig.cache
+A:\0-COLLEGE\Term3\Object Oriented Programming\AddFeatures\EldoriaChronicles\src\obj\Debug\net9.0\ref\src.dll
