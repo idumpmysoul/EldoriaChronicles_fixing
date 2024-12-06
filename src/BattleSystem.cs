@@ -63,9 +63,13 @@ public class BattleSystem
 
                 BattleAnimation();
             }
-            if (enemy.Health < 0) enemy.Health = 0;
-            else if (player.Health < 0) player.Health = 0;
-            
+            if (enemy.Health < 0) {
+                enemy.Health = 0;
+            }
+            else if (player.Health < 0){
+                player.Health = 0;
+            }
+
             DisplayStatus();
         }
 
@@ -96,7 +100,7 @@ public class BattleSystem
 
     private void EscapeBattle()
     {
-        Console.WriteLine($"{player.Name} memutuskan untuk kabur dari pertarungan!");
-        player.Health = 0;  // Player loses health when escaping, or you could make this more complex
+        Console.WriteLine($"{player.Name} memutuskan untuk kabur dari pertarungan! Health -5");
+        player.Health -= 5;  // Player loses health when escaping, or you could make this more complex
     }
 }

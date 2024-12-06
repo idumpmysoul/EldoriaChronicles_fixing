@@ -51,20 +51,29 @@ public class StartGame
                         Console.WriteLine("1. Lanjut");
                         Console.WriteLine("2. Kembali ke Lobby");
 
-                        var action2 = Console.ReadLine();
+                        int valid = 0;
                         do
                         {
+                            var action2 = Console.ReadLine();
                             if (action2 == "1")
                             {
                                 Console.WriteLine("Menuju medan perang!");
+                                IsBattle = true;
+                                valid = 1;
+                                break;
                             }
                             else if (action2 == "2")
                             {
                                 Console.WriteLine("Kembali ke lobby");
                                 IsBattle = false;
+                                valid = 1;
+                                break;
                             }
-                            else Console.WriteLine("Choice Invalid!");
-                        } while (action2 == "1" || action == "2");
+                            else {
+                                Console.WriteLine("Choice Invalid!");
+                                valid = 0;
+                            }
+                        } while (valid == 0);
                     }
                     break;
                 case "2":
