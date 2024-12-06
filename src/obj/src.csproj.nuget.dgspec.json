@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Wilman Saragih\\Documents\\OOP 2\\Feature Update\\EldoriaChronicles_fixing\\src\\src.csproj": {}
+    "C:\\Users\\rifqi\\Downloads\\OOP_kelas\\EldoriaChronicles_fixing\\src\\src.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Wilman Saragih\\Documents\\OOP 2\\Feature Update\\EldoriaChronicles_fixing\\src\\src.csproj": {
+    "C:\\Users\\rifqi\\Downloads\\OOP_kelas\\EldoriaChronicles_fixing\\src\\src.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Wilman Saragih\\Documents\\OOP 2\\Feature Update\\EldoriaChronicles_fixing\\src\\src.csproj",
+        "projectUniqueName": "C:\\Users\\rifqi\\Downloads\\OOP_kelas\\EldoriaChronicles_fixing\\src\\src.csproj",
         "projectName": "src",
-        "projectPath": "C:\\Users\\Wilman Saragih\\Documents\\OOP 2\\Feature Update\\EldoriaChronicles_fixing\\src\\src.csproj",
-        "packagesPath": "C:\\Users\\Wilman Saragih\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Wilman Saragih\\Documents\\OOP 2\\Feature Update\\EldoriaChronicles_fixing\\src\\obj\\",
+        "projectPath": "C:\\Users\\rifqi\\Downloads\\OOP_kelas\\EldoriaChronicles_fixing\\src\\src.csproj",
+        "packagesPath": "C:\\Users\\rifqi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\rifqi\\Downloads\\OOP_kelas\\EldoriaChronicles_fixing\\src\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Wilman Saragih\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\rifqi\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -37,7 +37,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -53,12 +54,30 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.11, 8.0.11]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[8.0.11, 8.0.11]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.11, 8.0.11]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.11, 8.0.11]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
