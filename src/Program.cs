@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 
 namespace EldoriaChronicles
 {
@@ -6,8 +6,8 @@ namespace EldoriaChronicles
     {
         static void Main(string[] args)
         {
-            MainMenu mainMenu = new MainMenu();
-            mainMenu.Display();
+            MainMenu mainMenu = new MainMenu();  // Membuat instance MainMenu
+            mainMenu.Display();  // Memanggil method Display untuk menampilkan menu
         }
     }
 }

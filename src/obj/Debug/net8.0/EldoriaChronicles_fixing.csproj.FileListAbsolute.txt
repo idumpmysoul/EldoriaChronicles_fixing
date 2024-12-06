@@ -1,0 +1,5 @@
+C:\Users\Wilman Saragih\Documents\OOP 2\Feature Update\EldoriaChronicles_fixing\src\obj\Debug\net8.0\EldoriaChronicles_fixing.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Wilman Saragih\Documents\OOP 2\Feature Update\EldoriaChronicles_fixing\src\obj\Debug\net8.0\EldoriaChronicles_fixing.AssemblyInfoInputs.cache
+C:\Users\Wilman Saragih\Documents\OOP 2\Feature Update\EldoriaChronicles_fixing\src\obj\Debug\net8.0\EldoriaChronicles_fixing.AssemblyInfo.cs
+C:\Users\Wilman Saragih\Documents\OOP 2\Feature Update\EldoriaChronicles_fixing\src\obj\Debug\net8.0\EldoriaChronicles_fixing.csproj.CoreCompileInputs.cache
+C:\Users\Wilman Saragih\Documents\OOP 2\Feature Update\EldoriaChronicles_fixing\src\obj\Debug\net8.0\EldoriaChronicles_fixing.sourcelink.json
